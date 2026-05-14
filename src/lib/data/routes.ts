@@ -1,0 +1,40 @@
+import { Route } from "../types";
+
+export const alternativeRoutes: Route[] = [
+  {
+    id: "r1",
+    name: "Fastest Route",
+    type: "fastest",
+    polyline: [[28.6139, 77.2090], [28.6200, 77.2150], [28.6250, 77.2200]],
+    eta: 25,
+    distance: 12.4,
+    tollFee: 80,
+    fuelCost: 95,
+    trafficLevel: "high",
+    emissionSaved: 0,
+  },
+  {
+    id: "r2",
+    name: "Cheapest Route",
+    type: "cheapest",
+    polyline: [[28.6139, 77.2090], [28.6150, 77.2180], [28.6250, 77.2200]],
+    eta: 38,
+    distance: 14.1,
+    tollFee: 30,
+    fuelCost: 110,
+    trafficLevel: "medium",
+    emissionSaved: 120,
+  },
+  {
+    id: "r3",
+    name: "AI Recommended",
+    type: "ai-suggested",
+    polyline: [[28.6139, 77.2090], [28.6180, 77.2120], [28.6220, 77.2180], [28.6250, 77.2200]],
+    eta: 30,
+    distance: 13.2,
+    tollFee: 55,
+    fuelCost: 100,
+    trafficLevel: "low",
+    emissionSaved: 240,
+  },
+];
